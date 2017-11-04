@@ -29,7 +29,8 @@
         <activity
             android:name=".Profiles"
             android:label="@string/title_activity_profiles" />
-        <activity android:name=".Graph"></activity>
+        <activity android:name=".Graph" />
+        <activity android:name=".SubjectMarks"></activity>
     </application>
 
 </manifest>

@@ -3,9 +3,15 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/academy"
+            android:id="@+id/subjectMarks"
             android:icon="@drawable/ic_timeline_black_24dp"
-            android:title="Academy History" />
+            android:title="Subject Marks" />
+
+        <item
+            android:id="@+id/average"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="Average" />
+
         <item
             android:id="@+id/personal_info"
             android:icon="@drawable/ic_assignment_ind_black_24dp"

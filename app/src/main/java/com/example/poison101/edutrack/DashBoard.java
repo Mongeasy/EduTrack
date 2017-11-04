@@ -41,11 +41,11 @@ public class DashBoard extends AppCompatActivity
 
         ArrayList<ContactRecycler> contactRecyclers = new ArrayList<>();
 
-        contactRecyclers.add(new ContactRecycler("John","Doe","your child have passed by flying colours","Term 3"));
-        contactRecyclers.add(new ContactRecycler("Wayne","May","your child have passed","Term 2"));
-        contactRecyclers.add(new ContactRecycler("Wandy","Turner","your child have failed maths and english","Term 1"));
+        contactRecyclers.add(new ContactRecycler("John", "Doe", "your child have passed by flying colours", "Term 3"));
+        contactRecyclers.add(new ContactRecycler("Wayne", "May", "your child have passed", "Term 2"));
+        contactRecyclers.add(new ContactRecycler("Wandy", "Turner", "your child have failed maths and english", "Term 1"));
 
-        recyclerAdapter = new RecyclerAdapter(this,contactRecyclers);
+        recyclerAdapter = new RecyclerAdapter(this, contactRecyclers);
 
         recyclerView.setAdapter(recyclerAdapter);
 
@@ -107,7 +107,16 @@ public class DashBoard extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.academy) {
+        if (id == R.id.subjectMarks) {
+
+            intent = new Intent(getApplicationContext(), SubjectMarks.class);
+            startActivity(intent);
+
+        } else if (id == R.id.average) {
+
+            intent = new Intent(getApplicationContext(), Graph.class);
+            startActivity(intent);
+
             // Handle the camera action
         } else if (id == R.id.personal_info) {
 
