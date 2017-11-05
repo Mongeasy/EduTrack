@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity
         Intent x =new Intent(MainActivity.this,SignUpActivity.class);
         startActivity(x);
         finish();
-        Toast.makeText(getApplicationContext(),"You logout Successfully!.",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"You logout Successfully!!!",Toast.LENGTH_LONG).show();
 
     }
 
